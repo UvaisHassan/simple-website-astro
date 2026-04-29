@@ -14,4 +14,4 @@ jobs:
         run: git pull
 
       - name: Copy built website files
-        run: sudo rsync -vP ~/simple-website-astro/dist/* /var/www/simple-website-astro/
+        run: sudo rsync -v ~/simple-website-astro/dist/* /var/www/simple-website-astro/
