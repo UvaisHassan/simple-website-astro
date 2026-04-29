@@ -9,10 +9,10 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Copy website folder for Actions testing
+      - name: Copy website folder with sudo for Actions testing
         run: |
-          cp -r ~/simple-website-astro/dist/ ~/copy-testing/
-          
+          sudo cp -r ~/simple-website-astro/dist/ /var/www/copy-testing/
+
       # - name: Checkout
       #   uses: actions/checkout@v5
       
