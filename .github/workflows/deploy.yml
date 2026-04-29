@@ -9,10 +9,10 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Create sample file for Actions testing
+      - name: Copy website folder for Actions testing
         run: |
-          touch sample2.txt
-          cp -r ~/simple-website-astro/build/ ~/copy-testing/
+          cp -r ~/simple-website-astro/dist/ ~/copy-testing/
+          
       # - name: Checkout
       #   uses: actions/checkout@v5
       
